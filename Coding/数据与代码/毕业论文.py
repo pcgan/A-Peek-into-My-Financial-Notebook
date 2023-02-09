@@ -4,22 +4,24 @@ Created on Sun Jan 15 11:28:42 2023
 
 @author: He Pengfei
 """
-
-from scipy.optimize import minimize
-from pypfopt import black_litterman, risk_models
-import numpy as np
-import pandas as pd
-from matplotlib import pyplot as plt
-import seaborn as sns
-from pypfopt import risk_models as RiskModels
 import datetime
-from pypfopt import black_litterman
-from pypfopt.black_litterman import BlackLittermanModel
-from pypfopt.efficient_frontier import EfficientFrontier
-from numpy.linalg import inv
 import math
 
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from matplotlib import pyplot as plt
+from numpy.linalg import inv
+from pypfopt import black_litterman
+from pypfopt import risk_models as riskmodels
+from pypfopt import expected_returns
+from pypfopt.black_litterman import BlackLittermanModel
+from pypfopt.efficient_frontier import EfficientFrontier
+from scipy.optimize import minimize
+
 #%matplotlib inline
+#editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'
+
 
 ''' 导入并初始化数据 '''
 
@@ -287,6 +289,7 @@ print(weights_table)
 '''显示结果'''
 
 import matplotlib.pyplot as plt
+
 N = BL_weights_vector.shape[0]
 fig, ax = plt.subplots(figsize=(15, 7))
 ax.set_title('Black-Litterman Model Portfolio Weights Recommendation vs the Market Portfolio vs Mean-Variance Weights')
