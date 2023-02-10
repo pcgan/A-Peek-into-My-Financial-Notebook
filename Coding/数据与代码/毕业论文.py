@@ -5,6 +5,7 @@ Created on Sun Jan 15 11:28:42 2023
 @author: He Pengfei
 """
 import datetime
+import os
 import math
 
 import numpy as np
@@ -12,15 +13,17 @@ import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
 from numpy.linalg import inv
-from pypfopt import black_litterman
+from pypfopt import black_litterman, expected_returns
 from pypfopt import risk_models as riskmodels
-from pypfopt import expected_returns
 from pypfopt.black_litterman import BlackLittermanModel
 from pypfopt.efficient_frontier import EfficientFrontier
 from scipy.optimize import minimize
 
 #%matplotlib inline
 #editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'
+
+os.chdir(r'D:\个人笔记\Coding\数据与代码')
+os.getcwd()
 
 
 ''' 导入并初始化数据 '''
@@ -39,9 +42,10 @@ asset_returns_orig.describe()
 # 数据处理
 cols = ['Stock_Growth', 'Stock_Value', 'ConvertableBond', 'Bond', 'GovBond10Y']
 asset_returns = asset_returns_orig[cols[:-1]].astype(float).dropna()
-asset_returns.head(10)
+asset_returns.tail(10)
 asset_returns_mean = asset_returns.mean()
-asset_returns_mean
+
+#(asset_returns/asset_returns.iloc[0]*100).plot(figsize=(8,5))
 
 riskfree_rate = asset_returns_orig['GovBond10Y']
 riskfree_rate.head(10)
