@@ -28,3 +28,8 @@ pd.to_datetime()
 data['加一天'] = data['时间'].dt.date+pd.to_timedelta(1, unit='D')
 # 加一小时
 data['加一小时'] = data['时间']+pd.to_timedelta(1, unit='h')
+
+# 生产日期时间序列
+## 根据起始时间点生成
+pd.date_range('20050601','20221231',freq='1M').strftime('%Y%m')
+pd.bdate_range(start='20050601',periods=211,freq='M')

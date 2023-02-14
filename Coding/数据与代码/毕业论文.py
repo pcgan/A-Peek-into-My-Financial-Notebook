@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
+import matplotlib.ticker as ticker
 from numpy.linalg import inv
 from pypfopt import black_litterman, expected_returns
 from pypfopt import risk_models as riskmodels
@@ -45,10 +46,34 @@ asset_returns = asset_returns_orig[cols[:-1]].astype(float).dropna()
 asset_returns.tail(10)
 asset_returns_mean = asset_returns.mean()
 
+asset_returns['dt']=pd.date_range('20050601','20221231',freq='1M').strftime('%Y%m')
+asset_returns.head(10)
+
+#资产收益率走势图
+fig,ax=plt.subplots(1,1)
+pd.options.display.notebook_repr_html=False  # 表格显示
+plt.rcParams['figure.dpi'] = 75  # 图形分辨率
+tick_spacing = 10
+ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
+
+                                   
+#sns.set_theme(style='darkgrid')  # 图形主题
+#sns.lineplot(data=asset_returns,x=asset_returns['dt'],y=asset_returns[['Stock_Growth', 'Stock_Value', 'ConvertableBond', 'Bond']])
+#plt.show()
+from pylab import mpl
+mpl.rcParams['font.sans-serif'] = ['Microsoft YaHei']    # 指定默认字体：解决plot不能显示中文问题
+mpl.rcParams['axes.unicode_minus'] = False               # 解决保存图像是负号'-'显示为方块的问题
+
+plt.plot(asset_returns['dt'],asset_returns[['Stock_Growth', 'Stock_Value', 'ConvertableBond', 'Bond']])
+plt.xlabel('时间',fontsize=12)
+plt.xticks(rotation=90,fontsize=8)
+plt.legend(['Stock_Growth', 'Stock_Value', 'ConvertableBond', 'Bond'])
+plt.show()
 #(asset_returns/asset_returns.iloc[0]*100).plot(figsize=(8,5))
 
 riskfree_rate = asset_returns_orig['GovBond10Y']
 riskfree_rate.head(10)
+
 
 # 计算资产收益率协方差矩阵和相关系数矩阵
 asset_returns_cov = asset_returns.cov()
