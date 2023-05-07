@@ -1,0 +1,1 @@
+select * from EMP where ROWNUM <=10;
