@@ -1,0 +1,258 @@
+{
+    "root": {
+        "data": {
+            "id": "cun7ubw2u9c0",
+            "created": 1691503202891,
+            "text": "经济基本面"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cun7vokq6000",
+                    "created": 1691503308866,
+                    "text": "通胀"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cun7w0g5zbs0",
+                            "created": 1691503334712,
+                            "text": "RMPI"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cun7w29cv0g0",
+                            "created": 1691503338654,
+                            "text": "PPI"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cun7xyujmsw0",
+                                    "created": 1691503487956,
+                                    "text": "生产类3/4"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cun7y2lg1aw0",
+                                    "created": 1691503496113,
+                                    "text": "生活类1/4"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cun7z2bg9f40",
+                                            "created": 1691503573873,
+                                            "text": "食品类8%"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cun7w4l4jug0",
+                            "created": 1691503343719,
+                            "text": "CPI",
+                            "note": "RPI剔除了服务类项目的价格"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cun81ygc1ns0",
+                                    "created": 1691503800554,
+                                    "text": "项目",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cun80uutteg0",
+                                            "created": 1691503714359,
+                                            "text": "食品1/3"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cun80wz112g0",
+                                            "created": 1691503718966,
+                                            "text": "非食品类2/3"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cun828w2z9s0",
+                                    "created": 1691503823274,
+                                    "text": "品种"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cun82h5jxyw0",
+                                            "created": 1691503841261,
+                                            "text": "消费品3/4"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cun82myi9d40",
+                                            "created": 1691503853895,
+                                            "text": "服务类1/4"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cun86i36qqg0",
+                                    "created": 1691504156751,
+                                    "text": "货币派"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cun8898j13k0",
+                                            "created": 1691504294211,
+                                            "text": "交易动机：M1同比增速"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cun88xelx7k0",
+                                            "created": 1691504346822,
+                                            "text": "投资动机：储蓄增速"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cun8c6569hk0",
+                                    "created": 1691504600935,
+                                    "text": "供需派"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cun8ebwa4y00",
+                                            "created": 1691504770186,
+                                            "text": "GDP是先行指标"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cun8eetspi80",
+                                            "created": 1691504776566,
+                                            "text": "工业产出缺口"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cun8fvjlaq80",
+                                    "created": 1691504891319,
+                                    "text": "预期派"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cun8go7xjkg0",
+                                    "created": 1691504953740,
+                                    "text": "输入性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cun8h1vr3ig0",
+                                            "created": 1691504983479,
+                                            "text": "石油大宗价格变化"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cun8i9c62480",
+                                            "created": 1691505078073,
+                                            "text": "国际农产品"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cun8kc96ty80",
+                            "created": 1691505241152,
+                            "text": "价格指数的传导关系"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cun8kz91gyw0",
+                                    "created": 1691505291209,
+                                    "text": "2003年：PPI先于CPI下行，焦点在于与PPI是否输入通缩"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cun8reyur1k0",
+                                    "created": 1691505795606,
+                                    "text": "2007-2008年：PPI的上行是否传导CPI通胀"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cun8vfecc680",
+                                    "created": 1691506109999,
+                                    "text": "PMPI向PPI的传导：上游偏卖方市场"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cun8xdwq1e80",
+                                    "created": 1691506263485,
+                                    "text": "PPI向CPI传导：下游偏买方市场"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cun7vqunm800",
+                    "created": 1691503313820,
+                    "text": "增长"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
